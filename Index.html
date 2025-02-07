@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky's Cute Website</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffccf9;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff1493;
+            font-size: 50px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 30px;
+            color: #ff1493;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Lucky's World! 🌸</h1>
+    <p>Click the button below to see a special message for you!</p>
+    <button onclick="showMessage()">CLICK ME</button>
+    <div id="message">HELLO CUTIE 🎀 PADHAI KRO😍☝🏾</div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
